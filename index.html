@@ -1,52 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Ziad Demo</title>
+  <title>Ziad's Demo</title>
   <style>
-    body {
+    * {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(270deg, #ff416c, #ff4b2b, #1f4037, #99f2c8);
-      background-size: 800% 800%;
-      animation: gradientBG 15s ease infinite;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Cairo', sans-serif;
       color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      overflow-x: hidden;
     }
-
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
     h1 {
-      font-size: 5rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      animation: glow 2s ease-in-out infinite alternate;
-      letter-spacing: 5px;
+      font-size: 4rem;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
     }
-
     @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080;
-      }
-      to {
-        text-shadow: 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6, 0 0 50px #00e6e6;
-      }
+      from { text-shadow: 0 0 10px #ff8a00, 0 0 20px #e52e71; }
+      to { text-shadow: 0 0 20px #ff8a00, 0 0 40px #e52e71; }
     }
-
     p {
       font-size: 1.5rem;
-      margin-bottom: 20px;
-      animation: slideText 5s infinite alternate;
+      margin-bottom: 30px;
+      opacity: 0.9;
     }
+    .btn {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      padding: 15px 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      transition: 0.4s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      transform: scale(1.1) rotate(2deg);
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: rgba(255,255,255,0.1);
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .card h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff8a00;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+    .ziad {
+      font-size: 2rem;
+      margin-top: 30px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bounce 1.5s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Welcome Ziad 🔥</h1>
+  <p>أهلا وسهلا في عالمك الجديد على GitHub & Vercel 🚀</p>
+  <a href="#" class="btn">اضغط هون يا زيزو ✨</a>
 
-    @keyframes slideText {
-      from {transform: translateX(-50px); opacity: 0.
+  <div class="cards">
+    <div class="card">
+      <h2>💡 فكرة</h2>
+      <p>زياد المبدع صاحب مليون مشروع!</p>
+    </div>
+    <div class="card">
+      <h2>🚀 طموح</h2>
+      <p>من جلجولية للعالم، مشاريع AI وتجارة إلكترونية!</p>
+    </div>
+    <div class="card">
+      <h2>🎶 حركات</h2>
+      <p>ستايل 🔥 و إبداع 💎 و شغل عالمي 🌍</p>
+    </div>
+  </div>
+
+  <div class="ziad">💎 Ziad The Legend 💎</div>
+
+  <div class="footer">
+    &copy; 2025 - صنع بإبداع زياد ✨
+  </div>
+</body>
+</html>
+
