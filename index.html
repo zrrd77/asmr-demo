@@ -1,38 +1,52 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ASMR Demo</title>
+  <title>Ziad Demo</title>
   <style>
     body {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      height: 100vh;
       margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(270deg, #ff416c, #ff4b2b, #1f4037, #99f2c8);
+      background-size: 800% 800%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+      text-align: center;
     }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      animation: fadeIn 2s ease-in-out;
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      animation: glow 2s ease-in-out infinite alternate;
+      letter-spacing: 5px;
     }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080;
+      }
+      to {
+        text-shadow: 0 0 20px #00e6e6, 0 0 30px #00e6e6, 0 0 40px #00e6e6, 0 0 50px #00e6e6;
+      }
+    }
+
     p {
       font-size: 1.5rem;
-      opacity: 0.9;
+      margin-bottom: 20px;
+      animation: slideText 5s infinite alternate;
     }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(-20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-  </style>
-</head>
-<body>
-  <h1>Hello World 👋</h1>
-  <p>أهلا زياد 🚀، أول صفحة HTML مرفوعة على GitHub & Vercel!</p>
-</body>
-</html>
+
+    @keyframes slideText {
+      from {transform: translateX(-50px); opacity: 0.
