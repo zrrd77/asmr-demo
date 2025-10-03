@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <title>ASMR Demo</title>
+  <meta charset="UTF-8">
+  <title>ASMR Demo</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.5rem;
+      opacity: 0.9;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World 👋</h1>
-    <p>مبروك يا زياد! أول صفحة HTML على GitHub 🎉</p>
+  <h1>Hello World 👋</h1>
+  <p>أهلا زياد 🚀، أول صفحة HTML مرفوعة على GitHub & Vercel!</p>
 </body>
 </html>
